@@ -4,6 +4,10 @@ body {
   line-height: 1;
 }
 
+.container{
+  margin-top: 30px;
+}
+
 textarea {
   background: transparent;
   border: none;
@@ -11,6 +15,11 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+}
+
+textarea:hover{
+  border-left: 1px solid #000000;
+  
 }
 
 header {
@@ -24,6 +33,7 @@ header {
 
 .description {
   white-space: pre-wrap;
+  border-radius: 20px;
 }
 
 .time-block {
@@ -59,14 +69,42 @@ header {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #06aed5;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+.saveBtn:before {
+  content: '';
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(89,176,255,1) 48%, rgba(0,212,255,1) 100%);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.saveBtn:active {
+  color: rgb(2,0,36);
+}
+
+.saveBtn:active:after {
+  background: transparent;
+}
+
+.saveBtn:hover:before {
+  opacity: 0.6;
 }
