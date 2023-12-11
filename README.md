@@ -36,7 +36,7 @@ The landing page for the application looks like the following on a standard HD s
 
 ![alt text](./assets/images/scr_1.png)
 
-![alt text](./assets/images/scr_3.png)
+![alt text](./assets/images/scr_4.png)
 
 ## Deployed Application
 

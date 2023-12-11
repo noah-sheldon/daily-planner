@@ -1,5 +1,5 @@
 var today = dayjs().format("D, MMMM YYYY");
-var time = dayjs().format("HH:mm:ss");
+var time = dayjs().format("h:mm a");
 var container = $(".container");
 let tasksMap = getTasks();
 
