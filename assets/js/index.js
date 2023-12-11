@@ -1,8 +1,10 @@
 var today = dayjs().format("D, MMMM YYYY");
+var time = dayjs().format("HH:mm:ss");
 var container = $(".container");
 let tasksMap = getTasks();
 
-$("#currentDay").text(today);
+$("#currentDay").text("Date: " + today);
+$("#currentTime").text("Time: " + time);
 
 startApp();
 
