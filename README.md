@@ -36,6 +36,8 @@ The landing page for the application looks like the following on a standard HD s
 
 ![alt text](./assets/images/scr_1.png)
 
+![alt text](./assets/images/scr_2.png)
+
 ## Deployed Application
 
 The web page for the deployed application.
